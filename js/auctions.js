@@ -137,6 +137,7 @@ function placeBid() {
     // Get item and user info
     let user = auth.currentUser;
     let itemId = i.toString().padStart(5, "0")
+    console.log(itemId)
     // Documents to check and write to
     let liveRef = db.collection("auction-live").doc("items")
     let storeRef = db.collection("auction-store").doc(itemId)
