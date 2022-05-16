@@ -1,13 +1,13 @@
 // For a real auction, set this to false
-let demoAuction = false;
+let demoAuction = true;
 // For a real auction, populate these arrays
-let primaryImages = ["https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png", "https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png", "https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png", "https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png", "https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png", "https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png"];
-let titles = ["1", "2", "3", "4", "5", "6"];
-let subtitles = ["1a", "2a", "3a", "4a", "5a", "6a"];
-let details = ["1b", "2b", "3b", "4b", "5b", "6b"];
-let secondaryImages = ["https://cdn.discordapp.com/attachments/878992258186215497/975622943247855676/unknown.png", "https://cdn.discordapp.com/attachments/878992258186215497/975622943247855676/unknown.png", "https://cdn.discordapp.com/attachments/878992258186215497/975622943247855676/unknown.png", "https://cdn.discordapp.com/attachments/878992258186215497/975622943247855676/unknown.png", "https://cdn.discordapp.com/attachments/878992258186215497/975622943247855676/unknown.png", "https://cdn.discordapp.com/attachments/878992258186215497/975622943247855676/unknown.png"];
-let startingPrices = [55, 60, 20, 0, 4, 5];
-let endTimes = [1652670279, 1652670279, 1652670279, 1652670279, 1652670279, 1652670279]; // Make sure to fix these to UTC time so they don't change with the users timezone
+let primaryImages = [];
+let titles = [];
+let subtitles = [];
+let details = [];
+let secondaryImages = [];
+let startingPrices = [55, 60, 20, 0, 4, 0, 99, 0, 12, 6, 3, 7];
+let endTimes = []; // Make sure to fix these to UTC time so they don't change with the users timezone
 
 // Random auction information
 function generateRandomAuctions() {
@@ -137,7 +137,6 @@ function placeBid() {
     // Get item and user info
     let user = auth.currentUser;
     let itemId = i.toString().padStart(5, "0")
-    console.log(itemId)
     // Documents to check and write to
     let liveRef = db.collection("auction-live").doc("items")
     let storeRef = db.collection("auction-store").doc(itemId)
