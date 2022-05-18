@@ -1,13 +1,13 @@
 // For a real auction, set this to false
-let demoAuction = true;
+let demoAuction = false;
 // For a real auction, populate these arrays
-let primaryImages = [];
-let titles = [];
-let subtitles = [];
-let details = [];
-let secondaryImages = [];
-let startingPrices = [55, 60, 20, 0, 4, 0, 99, 0, 12, 6, 3, 7];
-let endTimes = []; // Make sure to fix these to UTC time so they don't change with the users timezone
+let primaryImages = ["https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png"];
+let titles = ["1asdfasdf","2thdfx","3ewrgw","asd4ew"];
+let subtitles = ["test1","2","3","4"];
+let details = ["test","test","Test","test"];
+let secondaryImages = ["https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png"];
+let startingPrices = [55, 60, 20, 0];
+let endTimes = [1654020275,1654020275,1654020275,1654020275]; // Make sure to fix these to UTC time so they don't change with the users timezone
 
 // Random auction information
 function generateRandomAuctions() {
@@ -75,7 +75,7 @@ function timeBetween(start, end) {
   return _string.trim()
 }
 
-// Set time on HTML clocks
+/* Set time on HTML clocks
 function setClocks() {
   let now = new Date();
   let nowTime = now.getTime();
@@ -91,6 +91,7 @@ function setClocks() {
         resetStore(i);
         auctionGrid = document.getElementById("auction-grid");
         auctionCard = generateAuctionCard(i);
+        console.log("clock called auction card")
         auctionGrid.appendChild(auctionCard);
       }
       // disable bidding on finished auctions
@@ -102,7 +103,9 @@ function setClocks() {
     }
   }
   setTimeout(setClocks, 1000);
+  console.log("set clock over asdfasdfasdfasdfasfasdfasdf")
 }
+*/
 
 // Place a bid on an item
 function placeBid() {
@@ -114,15 +117,7 @@ function placeBid() {
   // Cleanse input
   let amountElement = document.getElementById("amount-input")
   let amount = Number(amountElement.value)
-  if (endTimes[i] - nowTime < 0) {
-    feedback.innerText = "The auction is already over!"
-    amountElement.classList.add("is-invalid")
-    setTimeout(() => {
-      bidModal.hide();
-      amountElement.classList.remove("is-invalid");
-      modalBidButton.removeAttribute('disabled', '');
-    }, 1000);
-  } else if (amount == 0) {
+  if (amount == 0) {
     // amount was empty
     feedback.innerText = "Please specify an amount!"
     amountElement.classList.add("is-invalid")
@@ -193,11 +188,13 @@ function generateAuctionCard(i) {
   let card = document.createElement("div");
   card.classList.add("card");
   card.id = "auction-" + i
+  console.log("card done");
   col.appendChild(card);
 
   let image = document.createElement("img");
   image.classList.add("card-img-top");
   image.src = primaryImages[i];
+  console.log("images done");
   card.appendChild(image);
 
   let body = document.createElement("div");
@@ -206,17 +203,20 @@ function generateAuctionCard(i) {
 
   let title = document.createElement("h5");
   title.classList.add("title");
+  console.log("title done");
   title.innerText = titles[i];
   body.appendChild(title);
 
   let subtitle = document.createElement("p");
   subtitle.classList.add("card-subtitle");
+  console.log("subtitle done");
   subtitle.innerText = subtitles[i];
   body.appendChild(subtitle);
 
   // Auction status
   let statusTable = document.createElement("table");
   statusTable.classList.add("table");
+  console.log("table done");
   card.appendChild(statusTable);
 
   let tableBody = document.createElement("tbody");
@@ -234,18 +234,6 @@ function generateAuctionCard(i) {
   bid.innerHTML = "£-.-- [- bids]"
   bid.id = "current-bid-" + i
   bidRow.appendChild(bid);
-
-  let timeRow = document.createElement("tr");
-  tableBody.appendChild(timeRow);
-
-  let timeTitle = document.createElement("th");
-  timeTitle.innerHTML = "Time left:"
-  timeTitle.scope = "row";
-  timeRow.appendChild(timeTitle);
-
-  let time = document.createElement("td");
-  time.id = "time-left-" + i
-  timeRow.appendChild(time);
 
   // Auction actions
   let buttonGroup = document.createElement("div");
@@ -279,6 +267,7 @@ function populateAuctionGrid() {
   let endingSoonest = argsort(endTimes);
   endingSoonest.forEach((i) => {
     auctionCard = generateAuctionCard(i);
+    console.log("populated grid");
     auctionGrid.appendChild(auctionCard);
   });
   if (demoAuction) { generateRandomAuctions() };
