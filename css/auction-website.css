@@ -1,5 +1,5 @@
 html * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Bootstrap tweaks */
@@ -19,4 +19,8 @@ html * {
 
 .table {
   margin-bottom: 0;
+}
+
+nav {
+  margin-bottom: 24px;
 }

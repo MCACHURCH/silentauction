@@ -10,37 +10,37 @@ let startingPrices = [55, 60, 20, 0];
 let endTimes = [1654020275,1654020275,1654020275,1654020275]; // Make sure to fix these to UTC time so they don't change with the users timezone
 
 // Random auction information
-function generateRandomAuctions() {
-  // Random cat images
-  document.querySelectorAll(".card > img").forEach(img => {
-    img.src = "https://cataas.com/cat/cute?random=" + Math.random();
-    primaryImages.push(img.src);
-    secondaryImages.push(img.src);
-  });
-  // Random cat names
-  $.getJSON(
-    "https://random-data-api.com/api/name/random_name",
-    { size: startingPrices.length },
-    function (data) {
-      data.forEach((elem, idx) => {
-        document.querySelector("#auction-" + idx + " > div > h5").innerHTML = elem.name;
-        titles.push(elem.name);
-      });
-    }
-  );
-  // Random lorem ipsum cat descriptions
-  $.getJSON(
-    "https://random-data-api.com/api/lorem_ipsum/random_lorem_ipsum",
-    { size: startingPrices.length },
-    function (data) {
-      data.forEach((elem, idx) => {
-        document.querySelector("#auction-" + idx + " > div > p").innerHTML = elem.short_sentence;
-        subtitles.push(elem.short_sentence);
-        details.push(elem.very_long_sentence);
-      });
-    }
-  );
-}
+// function generateRandomAuctions() {
+//   // Random cat images
+//   document.querySelectorAll(".card > img").forEach(img => {
+//     img.src = "https://cataas.com/cat/cute?random=" + Math.random();
+//     primaryImages.push(img.src);
+//     secondaryImages.push(img.src);
+//   });
+//   // Random cat names
+//   $.getJSON(
+//     "https://random-data-api.com/api/name/random_name",
+//     { size: startingPrices.length },
+//     function (data) {
+//       data.forEach((elem, idx) => {
+//         document.querySelector("#auction-" + idx + " > div > h5").innerHTML = elem.name;
+//         titles.push(elem.name);
+//       });
+//     }
+//   );
+//   // Random lorem ipsum cat descriptions
+//   $.getJSON(
+//     "https://random-data-api.com/api/lorem_ipsum/random_lorem_ipsum",
+//     { size: startingPrices.length },
+//     function (data) {
+//       data.forEach((elem, idx) => {
+//         document.querySelector("#auction-" + idx + " > div > p").innerHTML = elem.short_sentence;
+//         subtitles.push(elem.short_sentence);
+//         details.push(elem.very_long_sentence);
+//       });
+//     }
+//   );
+// }
 
 // Initial state of auction, used for resetting database
 let startPrices = [];
@@ -141,7 +141,7 @@ function placeBid() {
       let thisItem = doc.data()[itemId];
       let bids = (Object.keys(thisItem).length - 1) / 2
       let currentBid = thisItem["bid" + bids]
-      if (amount >= 1 + currentBid) {
+      if (amount >= 10000 + currentBid) {
         keyStem = itemId + ".bid" + (bids + 1)
         liveRef.update({
           [keyStem + "-uid"]: user.uid,
@@ -167,7 +167,7 @@ function placeBid() {
         }, 1000);
       } else {
         amountElement.classList.add("is-invalid")
-        feedback.innerText = "You must bid at least £" + (currentBid + 1).toFixed(2) + "!"
+        feedback.innerText = "You must bid at least " + numberWithCommas(currentBid + 10000) + " VND!"
         modalBidButton.removeAttribute('disabled', '');
       }
     });
@@ -231,7 +231,7 @@ function generateAuctionCard(i) {
   bidRow.appendChild(bidTitle);
 
   let bid = document.createElement("td");
-  bid.innerHTML = "£-.-- [- bids]"
+  bid.innerHTML = "-- VND [- bids]"
   bid.id = "current-bid-" + i
   bidRow.appendChild(bid);
 
@@ -287,13 +287,13 @@ function dataListener() {
       let bids = data[key]
       // Extract bid data
       let bidCount = (Object.keys(bids).length - 1) / 2
-      let currPound = Number.parseFloat(bids["bid" + bidCount]).toFixed(2)
+      let currPound = Number.parseInt(bids["bid" + bidCount])
       // Check if the user is winning
       if (auth.currentUser) {
         let userWinning = bids["bid" + bidCount + "-user"] == auth.currentUser.uid
       }
       // Add bid data to HTML
-      cb.innerHTML = "£" + numberWithCommas(currPound) + " [" + bidCount + " bid" + (bidCount != 1 ? "s" : "") + "]"
+      cb.innerHTML = numberWithCommas(currPound) + " VND" + " [" + bidCount + " bid" + (bidCount != 1 ? "s" : "") + "]"
     }
   })
 }
