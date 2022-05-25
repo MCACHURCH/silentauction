@@ -7,6 +7,7 @@ html * {
   width: 100%;
   height: 16em;
   object-fit: cover;
+  border-radius: 10px !important;
 }
 
 .list-group-horizontal > .list-group-item {
@@ -23,4 +24,22 @@ html * {
 
 nav {
   margin-bottom: 24px;
+}
+
+.card {
+  border-width: 4px !important;
+  border-radius: 10px;
+}
+
+.btn-group > .btn-primary {
+  border-radius: 0 0 5px 0 !important;
+  border-width: 0 !important;
+  flex-grow: 6 !important;
+  margin: 0 !important;
+}
+
+.btn-group > .btn-secondary {
+  border-radius: 0 0 0 5px !important;
+  border-width: 0 !important;
+  flex-grow: 5 !important;
 }
