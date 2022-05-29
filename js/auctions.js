@@ -4,7 +4,6 @@ let demoAuction = false;
 let primaryImages = [
   "https://cdn.discordapp.com/attachments/980376991515688980/980377056988790795/balls_table.jpg",
   "https://cdn.discordapp.com/attachments/980376991515688980/980377056690991154/Flower.jpg",
-  "https://cdn.discordapp.com/attachments/980376991515688980/980377056418332692/Jellyfish_table.jpg",
   "https://cdn.discordapp.com/attachments/980376991515688980/980377056187662336/Jill_carter_painting.jpg",
   "https://cdn.discordapp.com/attachments/980376991515688980/980377055944384552/racoon.jpg",
   "https://cdn.discordapp.com/attachments/980376991515688980/980377055701139506/Red_face_table.jpg",
@@ -16,7 +15,6 @@ let primaryImages = [
 let titles = [
   "Umbrellas",
   "White Lotus",
-  "Jellyfish",
   "Collage",
   "Racoon",
   "Self Portrait",
@@ -29,7 +27,6 @@ let titles = [
 let startingPrices = [
   750000, 
   1000000,
-  0, 
   500000, 
   300000, 
   1000000,
@@ -42,7 +39,6 @@ let startingPrices = [
 let authors = [
   "Julia",
   "Nguyen Huong Giang",
-  "Unknown",
   "Ms. Carter",
   "Lanna Dang",
   "Brianna Nguyen",
@@ -54,7 +50,6 @@ let authors = [
 let details = [
   "So what if you are you? Even if others around you may muddle into grey patches, black turned white, you burn red. Memories and experiences contribute to who you are today, but a red umbrella is still a red umbrella.",
   "The trio of white lotus represent the breath-taking beauty of nature. Lotus are the national flower of Vietnam which symbolize the Vietnamese woman: Pureness.  The white lotus flower is also known to symbolize Bodhi (being awakened), and represents a state of mental purity, and that of spiritual perfection; it is also associated with the pacification of one's nature. This lotus is considered to be the womb of the world.",
-  "",
   "",
   "Sketch of a raccoon on silver scratch pad.",
   "This is a self-portrait done in oil paint that describes the sense of not being one’s self. When your physical body doesn’t align with your spiritual and the visage you observe from the mirror feels like looking at a stranger in the street.",
@@ -78,7 +73,14 @@ for (let i = 0; i < startingPrices.length; i++) {
 
 // Initial state of auction, used for resetting database
 let startPrices = [];
+
 for (let i = 0; i < startingPrices.length; i++) {
+  if (demoAuction) {
+    let now = new Date();
+    let endTime = new Date().setHours(8 + i, 0, 0, 0)
+    if (endTime - now < 0) { endTime = new Date(endTime).setDate(now.getDate() + 1) }
+    endTimes.push(endTime)
+  }
   startPrices.push({
     bid0: {
       bidder: String(i),
@@ -299,7 +301,6 @@ function resetLive(i) {
   let itemId = i.toString().padStart(5, "0")
   docRef.update({
     [itemId]: {
-      title: titles[i],
       bid0: startPrices[i]["bid0"]["amount"],
     }
   })
