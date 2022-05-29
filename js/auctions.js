@@ -1,56 +1,89 @@
 // For a real auction, set this to false
 let demoAuction = false;
 // For a real auction, populate these arrays
-let primaryImages = ["https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png"];
-let titles = ["1asdfasdf","2thdfx","3ewrgw","asd4ew"];
-let subtitles = ["test1","2","3","4"];
-let details = ["test","test","Test","test"];
-let secondaryImages = ["https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png","https://cdn.discordapp.com/attachments/878992258186215497/975622638359691314/unknown.png"];
-let startingPrices = [55, 60, 20, 0];
-let endTimes = [1654020275,1654020275,1654020275,1654020275]; // Make sure to fix these to UTC time so they don't change with the users timezone
+let primaryImages = [
+  "https://cdn.discordapp.com/attachments/980376991515688980/980377056988790795/balls_table.jpg",
+  "https://cdn.discordapp.com/attachments/980376991515688980/980377056690991154/Flower.jpg",
+  "https://cdn.discordapp.com/attachments/980376991515688980/980377057399820298/goldenstreak.jpg",
+  "https://cdn.discordapp.com/attachments/980376991515688980/980377056418332692/Jellyfish_table.jpg",
+  "https://cdn.discordapp.com/attachments/980376991515688980/980377056187662336/Jill_carter_painting.jpg",
+  "https://cdn.discordapp.com/attachments/980376991515688980/980377055944384552/racoon.jpg",
+  "https://cdn.discordapp.com/attachments/980376991515688980/980377055701139506/Red_face_table.jpg",
+  "https://cdn.discordapp.com/attachments/980376991515688980/980377055185207328/Vietnamese_landscape_table.jpg",
+  "https://cdn.discordapp.com/attachments/980376991515688980/980377054912581642/white_flower_table.jpg",
+  "https://cdn.discordapp.com/attachments/979971450368847874/980407359409094676/Lanna_Dang_-_Starry_Night.jpg",
+  "https://cdn.discordapp.com/attachments/979971450368847874/980426820744802344/IMG_5616.png",
+];
+let titles = [
+  "Umbrellas",
+  "White Lotus",
+  "Golden Streaks",
+  "Jellyfish",
+  "Collage",
+  "Racoon",
+  "Self Portrait",
+  "Rice Terrace",
+  "Hoa Quynh",
+  "Starry Sea",
+  "Angel vs Devil",
+];
 
-// Random auction information
-// function generateRandomAuctions() {
-//   // Random cat images
-//   document.querySelectorAll(".card > img").forEach(img => {
-//     img.src = "https://cataas.com/cat/cute?random=" + Math.random();
-//     primaryImages.push(img.src);
-//     secondaryImages.push(img.src);
-//   });
-//   // Random cat names
-//   $.getJSON(
-//     "https://random-data-api.com/api/name/random_name",
-//     { size: startingPrices.length },
-//     function (data) {
-//       data.forEach((elem, idx) => {
-//         document.querySelector("#auction-" + idx + " > div > h5").innerHTML = elem.name;
-//         titles.push(elem.name);
-//       });
-//     }
-//   );
-//   // Random lorem ipsum cat descriptions
-//   $.getJSON(
-//     "https://random-data-api.com/api/lorem_ipsum/random_lorem_ipsum",
-//     { size: startingPrices.length },
-//     function (data) {
-//       data.forEach((elem, idx) => {
-//         document.querySelector("#auction-" + idx + " > div > p").innerHTML = elem.short_sentence;
-//         subtitles.push(elem.short_sentence);
-//         details.push(elem.very_long_sentence);
-//       });
-//     }
-//   );
-// }
+let startingPrices = [
+  750000, 
+  1000000, 
+  0, 
+  0, 
+  500000, 
+  300000, 
+  1000000,
+  300000, 
+  1500000, 
+  500000,
+  750000,
+];
+
+let authors = [
+  "Julia",
+  "Nguyen Huong Giang",
+  "Unknown",
+  "Unknown",
+  "Ms. Carter",
+  "Lanna Dang",
+  "Brianna Nguyen",
+  "Lanna Dang",
+  "Brianna Nguyen",
+  "Lanna Dang",
+  "Gaby"
+];
+let details = [
+  "So what if you are you? Even if others around you may muddle into grey patches, black turned white, you burn red. Memories and experiences contribute to who you are today, but a red umbrella is still a red umbrella.",
+  "The trio of white lotus represent the breath-taking beauty of nature. Lotus are the national flower of Vietnam which symbolize the Vietnamese woman: Pureness.  The white lotus flower is also known to symbolize Bodhi (being awakened), and represents a state of mental purity, and that of spiritual perfection; it is also associated with the pacification of one's nature. This lotus is considered to be the womb of the world.",
+  "",
+  "",
+  "",
+  "Sketch of a raccoon on silver scratch pad.",
+  "This is a self-portrait done in oil paint that describes the sense of not being one’s self. When your physical body doesn’t align with your spiritual and the visage you observe from the mirror feels like looking at a stranger in the street.",
+  "A recreation of Vietnam most iconic scenery using chalk pastel.",
+  "This piece discovers womanhood within femininity symbols in Vietnamese culture through the topic of virginity and being pristine. It calls out the stigmatism that’s attached to being a woman with sexual desires and wants described through the crushed petals. Although it may seem that desire ruined the flower’s purity and beauty, the true destructor is judgement and prejudice. Despite the crushed petals, this Hoa Quynh still stands delicate, yet strong with her alluring appeal.",
+  "This piece depicts a figure on the back of a whale swimming through a sea of clouds. When making this piece, I wanted it to convey ideas of escapism and daydreaming. To the viewer, I want to emphasize the importance of dreaming and letting that dream seep beyond that mental threshold and into reality.",
+  `"The angel spread their wings around me,
+  A divine messenger,
+  Protecting me from evil spirits,
+  They guide me to where there is light.
+  The devil whispers in my ear,
+  Words full of seduction,
+  Preying on my soul,
+  They lure me into the darkness."`,
+];
+
+let endTimes = [];
+for (let i = 0; i < startingPrices.length; i++) {
+  endTimes.push(1654020275)
+}
 
 // Initial state of auction, used for resetting database
 let startPrices = [];
 for (let i = 0; i < startingPrices.length; i++) {
-  if (demoAuction) {
-    let now = new Date();
-    let endTime = new Date().setHours(8 + i, 0, 0, 0)
-    if (endTime - now < 0) { endTime = new Date(endTime).setDate(now.getDate() + 1) }
-    endTimes.push(endTime)
-  }
   startPrices.push({
     bid0: {
       bidder: String(i),
@@ -74,38 +107,6 @@ function timeBetween(start, end) {
   if (s) { _string = _string + s + "s " }
   return _string.trim()
 }
-
-/* Set time on HTML clocks
-function setClocks() {
-  let now = new Date();
-  let nowTime = now.getTime();
-  for (i = 0; i < startingPrices.length; i++) {
-    let timer = document.getElementById("time-left-" + i)
-    // remove finished auction after 5 minutes
-    if (endTimes[i] - nowTime < -300) {
-      document.getElementById("auction-" + i).parentElement.style.display = "none"
-      if (demoAuction) {
-        endTimes[i] = new Date(endTimes[i]).setDate(now.getDate() + 1) // add 1 day
-        document.getElementById("auction-" + i).parentElement.remove()
-        resetLive(i);
-        resetStore(i);
-        auctionGrid = document.getElementById("auction-grid");
-        auctionCard = generateAuctionCard(i);
-        console.log("clock called auction card")
-        auctionGrid.appendChild(auctionCard);
-      }
-      // disable bidding on finished auctions
-    } else if (endTimes[i] - nowTime < 0) {
-      timer.innerHTML = "Auction Complete";
-      document.getElementById("bid-button-" + i).setAttribute('disabled', '')
-    } else {
-      timer.innerHTML = timeBetween(nowTime, endTimes[i]);
-    }
-  }
-  setTimeout(setClocks, 1000);
-  console.log("set clock over asdfasdfasdfasdfasfasdfasdf")
-}
-*/
 
 // Place a bid on an item
 function placeBid() {
@@ -210,7 +211,7 @@ function generateAuctionCard(i) {
   let subtitle = document.createElement("p");
   subtitle.classList.add("card-subtitle");
   console.log("subtitle done");
-  subtitle.innerText = subtitles[i];
+  subtitle.innerText = "By: " + authors[i];
   body.appendChild(subtitle);
 
   // Auction status
@@ -244,7 +245,7 @@ function generateAuctionCard(i) {
   infoButton.type = "button"
   infoButton.href = "#";
   infoButton.classList.add("btn", "btn-secondary")
-  infoButton.innerText = "Info";
+  infoButton.innerText = "Details";
   infoButton.onclick = function () { openInfo(this.id); }
   infoButton.id = "info-button-" + i
   buttonGroup.appendChild(infoButton);
@@ -303,6 +304,7 @@ function resetLive(i) {
   let itemId = i.toString().padStart(5, "0")
   docRef.update({
     [itemId]: {
+      title: titles[i],
       bid0: startPrices[i]["bid0"]["amount"],
     }
   })

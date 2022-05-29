@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 html * {
   font-family: 'Montserrat', sans-serif !important;
 }
@@ -28,7 +30,11 @@ nav {
 
 .card {
   border-width: 4px !important;
-  border-radius: 10px;
+  border-radius: 10px !important;
+}
+
+.card-img-top {
+  border-radius: 6px 6px 0 0 !important;
 }
 
 .btn-group > .btn-primary {
@@ -42,4 +48,20 @@ nav {
   border-radius: 0 0 0 5px !important;
   border-width: 0 !important;
   flex-grow: 5 !important;
+}
+
+td, th {
+  border: 0 !important;
+}
+
+label {
+  color: #6c757d;
+}
+
+.modal-footer {
+  border: 0 !important;
+}
+
+.card-subtitle {
+  font-style: italic;
 }

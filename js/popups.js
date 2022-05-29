@@ -6,7 +6,7 @@ function openInfo(id) {
   let i = id.match("[0-9]+");
   document.getElementById('info-modal-title').innerText = titles[i]
   document.getElementById('info-modal-desc').innerHTML = details[i]
-  document.getElementById('info-modal-img').src = secondaryImages[i];
+  document.getElementById('info-modal-img').src = primaryImages[i];
   document.querySelector("#info-modal > div > div > div.modal-footer > button.btn.btn-primary").id = "info-modal-submit-bid-btn-" + i
   infoModal.show()
 }
@@ -32,14 +32,22 @@ function openLogin() {
 }
 
 function newUserLogin() {
-  loggedIn = auth.currentUser && auth.currentUser.displayName
-  if (!loggedIn) {
-    let username = document.getElementById('username-input').value
-    let user = auth.currentUser;
-    user.updateProfile({ displayName: username })
-    db.collection("users").doc(user.uid).set({ name: username, admin: false })
-    loginModal.hide()
-    replaceSignupButton(username)
+  if (document.getElementById("email-input").validity.valid == false) {
+    alert("Please enter a valid email address!");
+  } else {
+    loggedIn = auth.currentUser && auth.currentUser.displayName
+    if (!loggedIn) {
+      let username = document.getElementById('username-input').value
+      let email = document.getElementById('email-input').value
+      let user = auth.currentUser;
+      user.updateProfile({ displayName: username })
+      db.collection("users").doc(user.uid).set({
+        name: username, 
+        email: email,
+        admin: false})
+      loginModal.hide()
+      replaceSignupButton(username)
+    }
   }
 }
 
