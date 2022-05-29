@@ -9,7 +9,6 @@ html * {
   width: 100%;
   height: 16em;
   object-fit: cover;
-  border-radius: 10px !important;
 }
 
 .list-group-horizontal > .list-group-item {
@@ -26,6 +25,23 @@ html * {
 
 nav {
   margin-bottom: 24px;
+  color: white;
+  text-align: center;
+}
+
+#countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p#clock-label {
+  margin: 0 !important;
+}
+
+p#demo {
+  margin: 0 !important;
 }
 
 .card {

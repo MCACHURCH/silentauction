@@ -4,7 +4,6 @@ let demoAuction = false;
 let primaryImages = [
   "https://cdn.discordapp.com/attachments/980376991515688980/980377056988790795/balls_table.jpg",
   "https://cdn.discordapp.com/attachments/980376991515688980/980377056690991154/Flower.jpg",
-  "https://cdn.discordapp.com/attachments/980376991515688980/980377057399820298/goldenstreak.jpg",
   "https://cdn.discordapp.com/attachments/980376991515688980/980377056418332692/Jellyfish_table.jpg",
   "https://cdn.discordapp.com/attachments/980376991515688980/980377056187662336/Jill_carter_painting.jpg",
   "https://cdn.discordapp.com/attachments/980376991515688980/980377055944384552/racoon.jpg",
@@ -17,7 +16,6 @@ let primaryImages = [
 let titles = [
   "Umbrellas",
   "White Lotus",
-  "Golden Streaks",
   "Jellyfish",
   "Collage",
   "Racoon",
@@ -30,8 +28,7 @@ let titles = [
 
 let startingPrices = [
   750000, 
-  1000000, 
-  0, 
+  1000000,
   0, 
   500000, 
   300000, 
@@ -46,7 +43,6 @@ let authors = [
   "Julia",
   "Nguyen Huong Giang",
   "Unknown",
-  "Unknown",
   "Ms. Carter",
   "Lanna Dang",
   "Brianna Nguyen",
@@ -58,7 +54,6 @@ let authors = [
 let details = [
   "So what if you are you? Even if others around you may muddle into grey patches, black turned white, you burn red. Memories and experiences contribute to who you are today, but a red umbrella is still a red umbrella.",
   "The trio of white lotus represent the breath-taking beauty of nature. Lotus are the national flower of Vietnam which symbolize the Vietnamese woman: Pureness.  The white lotus flower is also known to symbolize Bodhi (being awakened), and represents a state of mental purity, and that of spiritual perfection; it is also associated with the pacification of one's nature. This lotus is considered to be the womb of the world.",
-  "",
   "",
   "",
   "Sketch of a raccoon on silver scratch pad.",
