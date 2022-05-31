@@ -20,7 +20,11 @@ let primaryImages = [
   "https://cdn.discordapp.com/attachments/981165542884933632/981165622920642610/DI8A1694.jpg",
   "https://cdn.discordapp.com/attachments/981165542884933632/981165623239393281/DI8A1693.jpg",
   "https://cdn.discordapp.com/attachments/981165542884933632/981165623537180692/DI8A1695.jpg",
-  "",
+  "js/download (1).png",
+  "https://pix10.agoda.net/hotelImages/569108/-1/ab94a30e7776f18fb1b38ebf9cbe673e.jpg?ca=15&ce=1&s=1024x768",
+  "js/makoto.jpg",
+  "js/makoto.jpg",
+  "js/makoto.jpg",
 ];
 let titles = [
   "Umbrellas",
@@ -41,7 +45,11 @@ let titles = [
   "Kumquat",
   "The Biz Never Sleeps - 2021",
   "Flower Still Life",
-  "",
+  "F & B vouchers (x4)",
+  "2 Nights voucher",
+  "#1 Poke Makoto - 10 vouchers",
+  "#2 Poke Makoto - 10 vouchers",
+  "#3 Poke Makoto - 10 vouchers",
 ];
 
 let startingPrices = [
@@ -63,6 +71,11 @@ let startingPrices = [
   750000,
   1000000,
   1250000,
+  500000,
+  2000000,
+  300000,
+  300000,
+  300000,
 ];
 
 let authors = [
@@ -84,6 +97,11 @@ let authors = [
   "Ms. Carter",
   "Mr. Green",
   "Ella Ngo",
+  "Rosas Tay Ho",
+  "Salinda Resort Phu Quoc",
+  "Poke Makoto",
+  "Poke Makoto",
+  "Poke Makoto",
 ];
 let details = [
   "So what if you are you? Even if others around you may muddle into grey patches, black turned white, you burn red. Memories and experiences contribute to who you are today, but a red umbrella is still a red umbrella.",
@@ -111,6 +129,11 @@ let details = [
   "Watercolor, Oil Pastel on Paper",
   `Charcoal on charcoal paper. Marcel Theo Hall better known as Biz Markie was a character larger than life. His music, style and personality transcends any one genre. He created a sound all his own, leaving a collection of music that will last for generations to come. Nobody will ever "Beat the BIz".`,
   "Acrylic Paint on Canvas",
+  "2,000,000 VND worth of F&B Voucher at Rosas Westlake",
+  "2 nights voucher at Salinda Resort - Phu Quoc",
+  "Applicable for orders including Poke Bowl during lunch and/or dinner at Lebon Steak or Soba Cafe. Available for both onlineand phone orders. This voucher cannot be combined with other promotions. Valid from 06/06/2022 to 26/06/2022",
+  "Applicable for orders including Poke Bowl during lunch and/or dinner at Lebon Steak or Soba Cafe. Available for both onlineand phone orders. This voucher cannot be combined with other promotions. Valid from 06/06/2022 to 26/06/2022",
+  "Applicable for orders including Poke Bowl during lunch and/or dinner at Lebon Steak or Soba Cafe. Available for both onlineand phone orders. This voucher cannot be combined with other promotions. Valid from 06/06/2022 to 26/06/2022",
 ];
 
 let endTimes = [];
