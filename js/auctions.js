@@ -5,23 +5,43 @@ let primaryImages = [
   "https://cdn.discordapp.com/attachments/980376991515688980/980377056988790795/balls_table.jpg",
   "https://cdn.discordapp.com/attachments/980376991515688980/980377056690991154/Flower.jpg",
   "https://cdn.discordapp.com/attachments/980376991515688980/980377056187662336/Jill_carter_painting.jpg",
-  "https://cdn.discordapp.com/attachments/980376991515688980/980377055944384552/racoon.jpg",
+  "https://cdn.discordapp.com/attachments/981165542884933632/981165622543142912/DI8A1696.jpg",
   "https://cdn.discordapp.com/attachments/980376991515688980/980377055701139506/Red_face_table.jpg",
   "https://cdn.discordapp.com/attachments/980376991515688980/980377055185207328/Vietnamese_landscape_table.jpg",
   "https://cdn.discordapp.com/attachments/980376991515688980/980377054912581642/white_flower_table.jpg",
   "https://cdn.discordapp.com/attachments/979971450368847874/980407359409094676/Lanna_Dang_-_Starry_Night.jpg",
   "https://cdn.discordapp.com/attachments/979971450368847874/980426820744802344/IMG_5616.png",
+  "https://cdn.discordapp.com/attachments/981165542884933632/981165620773138482/purple_boat_table.jpg",
+  "https://cdn.discordapp.com/attachments/981165542884933632/981165620991254558/landscape_table.jpg",
+  "https://cdn.discordapp.com/attachments/981165542884933632/981165621230325800/goldfish_table.jpg",
+  "https://cdn.discordapp.com/attachments/981165542884933632/981165621431660614/girl_flowers_table.jpg",
+  "https://cdn.discordapp.com/attachments/981165542884933632/981165621729431582/DI8A1698.jpg",
+  "https://cdn.discordapp.com/attachments/981165542884933632/981165622115315732/DI8A1697.jpg",
+  "https://cdn.discordapp.com/attachments/981165542884933632/981165622920642610/DI8A1694.jpg",
+  "https://cdn.discordapp.com/attachments/981165542884933632/981165623239393281/DI8A1693.jpg",
+  "https://cdn.discordapp.com/attachments/981165542884933632/981165623537180692/DI8A1695.jpg",
+  "",
 ];
 let titles = [
   "Umbrellas",
-  "White Lotus",
+  "White Lotus #1",
   "Collage",
-  "Racoon",
+  "Raccoon",
   "Self Portrait",
   "Rice Terrace",
   "Hoa Quynh",
   "Starry Sea",
   "Angel vs Devil",
+  "Ocean and Space Collide",
+  "Meadow",
+  "Goldfish",
+  "The Girl and Lilies",
+  "White Lotus #2",
+  "White Lotus #3",
+  "Kumquat",
+  "The Biz Never Sleeps - 2021",
+  "Flower Still Life",
+  "",
 ];
 
 let startingPrices = [
@@ -34,6 +54,15 @@ let startingPrices = [
   1500000, 
   500000,
   750000,
+  1000000,
+  300000,
+  500000,
+  1250000,
+  1000000,
+  1000000,
+  750000,
+  1000000,
+  1250000,
 ];
 
 let authors = [
@@ -45,7 +74,16 @@ let authors = [
   "Lanna Dang",
   "Brianna Nguyen",
   "Lanna Dang",
-  "Gaby"
+  "Gaby",
+  "Anh Ngoc",
+  "Luong Anh Kieu Khanh",
+  "Luong Anh Kieu Khanh",
+  "Anh Ngoc",
+  "Nguyen Huong Giang",
+  "Nguyen Huong Giang",
+  "Ms. Carter",
+  "Mr. Green",
+  "Ella Ngo",
 ];
 let details = [
   "So what if you are you? Even if others around you may muddle into grey patches, black turned white, you burn red. Memories and experiences contribute to who you are today, but a red umbrella is still a red umbrella.",
@@ -64,6 +102,15 @@ let details = [
   Words full of seduction,
   Preying on my soul,
   They lure me into the darkness."`,
+  "Acrylic Paint on Canvas",
+  "A reflective depiction painted while observing the Moc Chau Valley in person.",
+  "Water color paint on canvas depicting a goldfish floating in the mid-depths of the sea, created in an attempt to capture natural occurences of peace.",
+  "Acrylic Paint on Canvas",
+  "The trio of white lotus represent the breath-taking beauty of nature. Lotus are the national flower of Vietnam which symbolize the Vietnamese woman: Pureness.  The white lotus flower is also known to symbolize Bodhi (being awakened), and represents a state of mental purity, and that of spiritual perfection; it is also associated with the pacification of one's nature. This lotus is considered to be the womb of the world.",
+  "The trio of white lotus represent the breath-taking beauty of nature. Lotus are the national flower of Vietnam which symbolize the Vietnamese woman: Pureness.  The white lotus flower is also known to symbolize Bodhi (being awakened), and represents a state of mental purity, and that of spiritual perfection; it is also associated with the pacification of one's nature. This lotus is considered to be the womb of the world.",
+  "Watercolor, Oil Pastel on Paper",
+  `Charcoal on charcoal paper. Marcel Theo Hall better known as Biz Markie was a character larger than life. His music, style and personality transcends any one genre. He created a sound all his own, leaving a collection of music that will last for generations to come. Nobody will ever "Beat the BIz".`,
+  "Acrylic Paint on Canvas",
 ];
 
 let endTimes = [];
@@ -139,7 +186,7 @@ function placeBid() {
       let thisItem = doc.data()[itemId];
       let bids = (Object.keys(thisItem).length - 1) / 2
       let currentBid = thisItem["bid" + bids]
-      if (amount >= 10000 + currentBid) {
+      if (amount >= 100000 + currentBid) {
         keyStem = itemId + ".bid" + (bids + 1)
         liveRef.update({
           [keyStem + "-uid"]: user.uid,
@@ -165,7 +212,7 @@ function placeBid() {
         }, 1000);
       } else {
         amountElement.classList.add("is-invalid")
-        feedback.innerText = "You must bid at least " + numberWithCommas(currentBid + 10000) + " VND!"
+        feedback.innerText = "You must bid at least " + numberWithCommas(currentBid + 100000) + " VND!"
         modalBidButton.removeAttribute('disabled', '');
       }
     });
@@ -208,7 +255,7 @@ function generateAuctionCard(i) {
   let subtitle = document.createElement("p");
   subtitle.classList.add("card-subtitle");
   console.log("subtitle done");
-  subtitle.innerText = "By: " + authors[i];
+  subtitle.innerText = "by: " + authors[i];
   body.appendChild(subtitle);
 
   // Auction status
