@@ -45,11 +45,11 @@ let titles = [
   "Kumquat",
   "The Biz Never Sleeps - 2021",
   "Flower Still Life",
-  "F & B vouchers (x4)",
+  "F & B vouchers",
   "2 Nights voucher",
-  "#1 Poke Makoto - 10 vouchers",
-  "#2 Poke Makoto - 10 vouchers",
-  "#3 Poke Makoto - 10 vouchers",
+  "#1 Poke Makoto - 10 vouchers (100k off each voucher)",
+  "#2 Poke Makoto - 10 vouchers (100k off each voucher)",
+  "#3 Poke Makoto - 10 vouchers (100k off each voucher)",
 ];
 
 let startingPrices = [
