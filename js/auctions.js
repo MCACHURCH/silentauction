@@ -305,7 +305,7 @@ function generateAuctionCard(i) {
 
   // Auction actions
   let buttonGroup = document.createElement("div");
-  buttonGroup.classList.add("btn-group");
+  buttonGroup.classList.add("btn-group", "hidden");
   card.appendChild(buttonGroup)
 
   let infoButton = document.createElement("button");
