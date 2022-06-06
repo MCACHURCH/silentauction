@@ -81,3 +81,12 @@ label {
 .card-subtitle {
   font-style: italic;
 }
+
+.hidden {
+  display: none;
+}
+
+#auction-done {
+  text-align: center;
+  margin-top: 25px;
+}
