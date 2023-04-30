@@ -57,3 +57,4 @@ function replaceSignupButton(name) {
   document.getElementById('signup-button').style.display = "none"
   document.getElementById('username-display').innerText = "Hi " + name
 }
+

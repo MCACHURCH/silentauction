@@ -93,54 +93,10 @@ let startingPrices = [
   0,
   0,
   0];
-let endTimes = [
-  1654020275,
-  1654020275,
-  1654020275,
-  1654020275,
-  1654020275,
-  1654020275,
-  1654020275,
-  1654020275,
-  1654020275,
-  1654020275,
-  1654020275,
-  1654020275,
-  1654020275,
-  1654020275,
-]; // Make sure to fix these to UTC time so they don't change with the users timezone
+let endTimes = [];
+for (let i = 0; i < startingPrices.length; i++) {
+  endTimes.push(1654020275)
 
-// Random auction information
-function generateRandomAuctions() {
-  // Random cat images
-  document.querySelectorAll(".card > img").forEach(img => {
-    img.src = "https://cataas.com/cat/cute?random=" + Math.random();
-    primaryImages.push(img.src);
-    secondaryImages.push(img.src);
-  });
-  // Random cat names
-  $.getJSON(
-    "https://random-data-api.com/api/name/random_name",
-    { size: startingPrices.length },
-    function (data) {
-      data.forEach((elem, idx) => {
-        document.querySelector("#auction-" + idx + " > div > h5").innerHTML = elem.name;
-        titles.push(elem.name);
-      });
-    }
-  );
-  // Random lorem ipsum cat descriptions
-  $.getJSON(
-    "https://random-data-api.com/api/lorem_ipsum/random_lorem_ipsum",
-    { size: startingPrices.length },
-    function (data) {
-      data.forEach((elem, idx) => {
-        document.querySelector("#auction-" + idx + " > div > p").innerHTML = elem.short_sentence;
-        subtitles.push(elem.short_sentence);
-        details.push(elem.very_long_sentence);
-      });
-    }
-  );
 }
 
 // Initial state of auction, used for resetting database
@@ -395,7 +351,7 @@ function dataListener() {
         let userWinning = bids["bid" + bidCount + "-user"] == auth.currentUser.uid
       }
       // Add bid data to HTML
-      cb.innerHTML = "£" + numberWithCommas(currPound) + " [" + bidCount + " bid" + (bidCount != 1 ? "s" : "") + "]"
+      cb.innerHTML = "$" + numberWithCommas(currPound) + " [" + bidCount + " bid" + (bidCount != 1 ? "s" : "") + "]"
     }
   })
 }
