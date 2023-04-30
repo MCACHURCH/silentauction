@@ -15,54 +15,81 @@ let primaryImages = [
   "./img/logo.png",
   "./img/logo.png",
   "./img/logo.png",
-  "./img/logo.png"];
+  "./img/logo.png",
+  "./img/logo.png",
+  "./img/logo.png",
+  "./img/logo.png",
+  "./img/logo.png",
+  "./img/logo.png",
+  "./img/logo.png"
+];
 let titles = [
-  "Babysitting",
-  "Gift Cards",
-  "Home Cooked Meal",
-  "Fishing Trip/Lessons",
-  "Meat Basket",
-  "Coffee Basket",
-  "Grocery Basket",
-  "Food",
-  "Snack Basket",
-  "Painting",
-  "Camping Basket",
-  "Yard Work",
-  "Food Basket",
-  "Basket"
+  "1 • Movie Night Basket",
+  "2 • Coffee/Tea Basket",
+  "3 • Taco Night",
+  "4 • Meat Basket",
+  "5 • Pink Backpack with School Supplies",
+  "6 • Green Backpack with School Supplies",
+  "7 • Snack Basket",
+  "8 • Meat Box",
+  "9 • Gift Card Menu",
+  "10 • Summer Fun",
+  "11 • Coffee Table",
+  "12 • Yeti & Blue Moon Bistro Gift Card",
+  "13 • Yard Work!!",
+  "14 • Babysitting by Adelaide",
+  "15 • Fishing Trip/Lessons",
+  "16 • Painting by Wyatt",
+  "17 • Painting by Nate",
+  "18 • Home Cooked Meal",
+  "19 • Grocery Basket",
+  "20 • Wicker Furniture"
 ];
 let subtitles = [
-  "Kami Spitler",
-  "Libby Hostetler",
-  "Gavin Spitler",
-  "Ian Sarver",
-  "Jarrett Hofstetter",
-  "Kristen",
-  "Weston",
-  "Jonas",
-  "Tate",
-  "Nate & Wyatt",
-  "Payton",
-  "Ian, Jackson, & Jonas",
-  "Abbey",
-  "Brayden"
+  "$25 - Alicia Hewitt", // Movie Night Basket
+  "$30 - Sara Mullet", // Coffee
+  "$50 - Merle Miller", // Taco
+  "$130 - Mark Sarver", // Meat Basket
+  "$45 - Aeliana Nussbaum", // Pink Backpack
+  "$50 - Gloria Stoltzfus", // Green Backpack
+  "$60 Lori Miller", // Snack
+  "$175 - Leon & Lois Mast", // Meat Box
+  "$100 - Mike & Val Gatti", // Gift Card Menu
+  "$35 - Gloria Stoltzfus", // Summer
+  "$75 - Rachel Burgett", // Coffee Table
+  "$70 - Lois Mast", // Yeti
+  "$250 - Ivan & Fran Miller", // Yard Work
+  "$50 - Laura Yoder", // Babysitting
+  "", // Fishing
+  "$15 - Benson Stoltzfus", // Wyatt Painting
+  "$15 - Brody Stoltzfus", // Nate Painting
+  "$100 - John & Jalaine Mast", // Meal
+  "$75 - Lori Miller", // Grocery
+  "$150 - John & Jalaine Mast" // Wicker Furniture
 ];
 let details = [
-  "Babysitting",
-  "Gift Card Description",
-  "Home cooked meal (by Kristi Spitler), delivered to your home",
-  "Fishing Description",
-  "Meat Description",
-  "Coffee Description",
+  "• Gourmet Popcorn • Blanket 50 x 60 • Fireproof dvd • Five boxes of candy • Six bags of microwave popcorn • Four snall popcorn buckets",
+  "• Breakfast Blend Coffee Beans • Red Mug Coffee Beans • Godiva Chocolates • Peppermint Tea • Caramel Syrup • Two Pottery Mugs • Kitchen Towel • Wooden Bowl",
+  "• Two sets of taco shells • Jalepenos • Chiles • Refried beans • Tortilla chips • Two bottles of hot suace • Salsa • Three bottles of tajin seasoning • Yellow habenero paste • ",
+  "• Peppered Bacon • Smoked Bacon • Maple Flavored Breakfast Links • Bratwurst • Kirk's Italian Sausage • Midl Italian Sausage",
+  "",
+  "",  
+  "• Cheez its • Doritp Minis • Pringles Cheddar Cheese • Ruffles Sour Cream and Cheddar • Snyder's Cheddar Cheese Pieces • Dot's Original Pretzels • Planters Delux Mixed Nuts • Nature's Valley granola • Chips Ahoy Minis • Oreo Minis • Little Bites • Pepperidge Farm Vanilla Sticks • Oatmeal Cream Pie • Honey Buns • Skittles • Reeses • $15 Dunkin Gift Card • $15 DQ Gift Card",
+  "• 2 - T-bone steaks • 2 - Ribeye steaks • 2 - Porthouse steaks • 2 - Sirloin steaks • Roast • 12 lbs ground week • 2 Packs hamburger patties • 1 - Packs hotdog",
+  "• $10 Chick-fil-A • $15 Chipotle • $15 Dairy Queen • $15 Dunkin' • $25 Let's Eat (you choose: Chili's, Cracker Barrel, Panera Bread, Red Lobster, The Cheescake Factory) • $10 Subway • $10 Taco Bell",
+  "• 10 foor rectangular inflatable pool • Pair of sunglasses • Pack of sellf sealing water balloons • Beach ball • Bubble gun • 64 oz bottle of bubble solution • 4 Water guns • 8 Dive sticks • 2 Water shooters • 12 foot sprinkler • 2 Beach towels",
+  "Wooden Coffee Table",
+  "",  
+  "Yard work of your choice by Jonas, Jackson, & Ian • Maximum of 5 hours • Mowing, weeding, trimming trees, & everything in between",
+  "Book this fun, experiencecd sitter for your crew of kids! Adelaide Risner comes highly recommended :) • Comfortable caring for multiple children • 15 years old • Lots of experience • Can do some food/snack prep • Flexible schedule • Transportation provided • Can bring a co-babysitter (13 year old sister, Helen) if needed • Scheduling and details will be discussed later",
+  "2-5 hour fishing trip • Guaranteed fish • Teaches your kids the basics and precautions of fishing • Up to 5 kids (adults will be present with 3 of more kids to ensure safety and enjoyability of the trip) • Fishing poles will be provided if kids do not have poles of their own",
+  "",
+  "",
+  "Home cooked meal by Kristi Spitler • Contact Gavin Spitler for more details 330-465-3403",
   "Grocery Description",
-  "Food Description",
-  "Snack Description",
-  "Painting Description",
-  "Camping Description",
-  "Yard Work",
-  "Food Description",
-  "Description"];
+  "• Wicker Chair • Wicker Ottoman/End Table • Fern • Outdoor Blanket, & Pillow"
+];
+  
 let secondaryImages = [
   "./img/logo.png",
   "./img/logo.png",
@@ -77,8 +104,16 @@ let secondaryImages = [
   "./img/logo.png",
   "./img/logo.png",
   "./img/logo.png",
-  "./img/logo.png"];
+  "./img/logo.png",
+  "./img/logo.png",
+  "./img/logo.png",
+  "./img/logo.png",
+  "./img/logo.png",
+  "./img/logo.png",
+  "./img/logo.png"
+];
 let startingPrices = [
+  0,
   0, 
   0, 
   0, 
@@ -92,7 +127,13 @@ let startingPrices = [
   0,
   0,
   0,
-  0];
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+];
 let endTimes = [];
 for (let i = 0; i < startingPrices.length; i++) {
   endTimes.push(1654020275)
@@ -270,6 +311,7 @@ function generateAuctionCard(i) {
   console.log("subtitle done");
   subtitle.innerText = subtitles[i];
   body.appendChild(subtitle);
+  
 
   // Auction status
   let statusTable = document.createElement("table");
@@ -283,15 +325,15 @@ function generateAuctionCard(i) {
   let bidRow = document.createElement("tr");
   tableBody.appendChild(bidRow);
 
-  let bidTitle = document.createElement("th");
+  /*let bidTitle = document.createElement("th");
   bidTitle.innerHTML = "Current bid:"
   bidTitle.scope = "row";
   bidRow.appendChild(bidTitle);
 
   let bid = document.createElement("td");
-  bid.innerHTML = "$-.-- [- bids]"
+  bid.innerHTML = startingPrices
   bid.id = "current-bid-" + i
-  bidRow.appendChild(bid);
+  bidRow.appendChild(bid);*/
 
   // Auction actions
   let buttonGroup = document.createElement("div");
@@ -306,7 +348,7 @@ function generateAuctionCard(i) {
   infoButton.onclick = function () { openInfo(this.id); }
   infoButton.id = "info-button-" + i
   buttonGroup.appendChild(infoButton);
-
+/*
   let bidButton = document.createElement("button");
   bidButton.type = "button"
   bidButton.href = "#";
@@ -315,7 +357,7 @@ function generateAuctionCard(i) {
   bidButton.onclick = function () { openBid(this.id); }
   bidButton.id = "bid-button-" + i
   buttonGroup.appendChild(bidButton);
-
+*/
   return col
 }
 
