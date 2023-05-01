@@ -46,8 +46,8 @@ let titles = [
   "20 • Wicker Furniture"
 ];
 let subtitles = [
-  "Current Bid: $75 - Kendrick Mullet", // Movie Night Basket
-  "Current Bid: $30 - Sara Mullet", // Coffee
+  "Current Bid: $25 - Alicia Hewitt", // Movie Night Basket
+  "Current Bid: $75 - Kendrick Mullet", // Coffee
   "Current Bid: $50 - Merle Miller", // Taco
   "Current Bid: $130 - Mark Sarver", // Meat Basket
   "Current Bid: $45 - Aeliana Nussbaum", // Pink Backpack
@@ -57,7 +57,7 @@ let subtitles = [
   "Current Bid: $100 - Mike & Val Gatti", // Gift Card Menu
   "Current Bid: $35 - Gloria Stoltzfus", // Summer
   "Current Bid: $75 - Rachel Burgett", // Coffee Table
-  "Current Bid: $10 - Kendrick Mullet", // Yeti
+  "Current Bid: $100 - Kendrick Mullet", // Yeti
   "Current Bid: $250 - Ivan & Fran Miller", // Yard Work
   "Current Bid: $50 - Laura Yoder", // Babysitting
   "Current Bid: $100 - Kendrick Mullet", // Fishing
