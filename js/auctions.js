@@ -46,25 +46,25 @@ let titles = [
   "20 • Wicker Furniture"
 ];
 let subtitles = [
-  "Current Bid: $25 - Alicia Hewitt", // Movie Night Basket
+  "Current Bid: $75 - Kendrick Mullet", // Movie Night Basket
   "Current Bid: $30 - Sara Mullet", // Coffee
   "Current Bid: $50 - Merle Miller", // Taco
   "Current Bid: $130 - Mark Sarver", // Meat Basket
   "Current Bid: $45 - Aeliana Nussbaum", // Pink Backpack
   "Current Bid: $50 - Gloria Stoltzfus", // Green Backpack
   "Current Bid: $60 Lori Miller", // Snack
-  "Current Bid: $175 - Leon & Lois Mast", // Meat Box
+  "Current Bid: $250 - Atlee & Elsie Hostetler", // Meat Box
   "Current Bid: $100 - Mike & Val Gatti", // Gift Card Menu
   "Current Bid: $35 - Gloria Stoltzfus", // Summer
   "Current Bid: $75 - Rachel Burgett", // Coffee Table
-  "Current Bid: $70 - Lois Mast", // Yeti
+  "Current Bid: $10 - Kendrick Mullet", // Yeti
   "Current Bid: $250 - Ivan & Fran Miller", // Yard Work
   "Current Bid: $50 - Laura Yoder", // Babysitting
-  "Current Bid: ", // Fishing
+  "Current Bid: $100 - Kendrick Mullet", // Fishing
   "Current Bid: $15 - Benson Stoltzfus", // Wyatt Painting
   "Current Bid: $15 - Brody Stoltzfus", // Nate Painting
-  "Current Bid: $100 - John & Jalaine Mast", // Meal
-  "Current Bid: $75 - Lori Miller", // Grocery
+  "Current Bid: $200 - Kendrick Mullet", // Meal
+  "Current Bid: $100 - Kendrick Mullet", // Grocery
   "Current Bid: $150 - John & Jalaine Mast" // Wicker Furniture
 ];
 let details = [
