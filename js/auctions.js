@@ -46,26 +46,26 @@ let titles = [
   "20 • Wicker Furniture"
 ];
 let subtitles = [
-  "$25 - Alicia Hewitt", // Movie Night Basket
-  "$30 - Sara Mullet", // Coffee
-  "$50 - Merle Miller", // Taco
-  "$130 - Mark Sarver", // Meat Basket
-  "$45 - Aeliana Nussbaum", // Pink Backpack
-  "$50 - Gloria Stoltzfus", // Green Backpack
-  "$60 Lori Miller", // Snack
-  "$175 - Leon & Lois Mast", // Meat Box
-  "$100 - Mike & Val Gatti", // Gift Card Menu
-  "$35 - Gloria Stoltzfus", // Summer
-  "$75 - Rachel Burgett", // Coffee Table
-  "$70 - Lois Mast", // Yeti
-  "$250 - Ivan & Fran Miller", // Yard Work
-  "$50 - Laura Yoder", // Babysitting
-  "", // Fishing
-  "$15 - Benson Stoltzfus", // Wyatt Painting
-  "$15 - Brody Stoltzfus", // Nate Painting
-  "$100 - John & Jalaine Mast", // Meal
-  "$75 - Lori Miller", // Grocery
-  "$150 - John & Jalaine Mast" // Wicker Furniture
+  "Current Bid: $25 - Alicia Hewitt", // Movie Night Basket
+  "Current Bid: $30 - Sara Mullet", // Coffee
+  "Current Bid: $50 - Merle Miller", // Taco
+  "Current Bid: $130 - Mark Sarver", // Meat Basket
+  "Current Bid: $45 - Aeliana Nussbaum", // Pink Backpack
+  "Current Bid: $50 - Gloria Stoltzfus", // Green Backpack
+  "Current Bid: $60 Lori Miller", // Snack
+  "Current Bid: $175 - Leon & Lois Mast", // Meat Box
+  "Current Bid: $100 - Mike & Val Gatti", // Gift Card Menu
+  "Current Bid: $35 - Gloria Stoltzfus", // Summer
+  "Current Bid: $75 - Rachel Burgett", // Coffee Table
+  "Current Bid: $70 - Lois Mast", // Yeti
+  "Current Bid: $250 - Ivan & Fran Miller", // Yard Work
+  "Current Bid: $50 - Laura Yoder", // Babysitting
+  "Current Bid: ", // Fishing
+  "Current Bid: $15 - Benson Stoltzfus", // Wyatt Painting
+  "Current Bid: $15 - Brody Stoltzfus", // Nate Painting
+  "Current Bid: $100 - John & Jalaine Mast", // Meal
+  "Current Bid: $75 - Lori Miller", // Grocery
+  "Current Bid: $150 - John & Jalaine Mast" // Wicker Furniture
 ];
 let details = [
   "• Gourmet Popcorn • Blanket 50 x 60 • Fireproof dvd • Five boxes of candy • Six bags of microwave popcorn • Four snall popcorn buckets",
@@ -82,7 +82,7 @@ let details = [
   "",  
   "Yard work of your choice by Jonas, Jackson, & Ian • Maximum of 5 hours • Mowing, weeding, trimming trees, & everything in between",
   "Book this fun, experiencecd sitter for your crew of kids! Adelaide Risner comes highly recommended :) • Comfortable caring for multiple children • 15 years old • Lots of experience • Can do some food/snack prep • Flexible schedule • Transportation provided • Can bring a co-babysitter (13 year old sister, Helen) if needed • Scheduling and details will be discussed later",
-  "2-5 hour fishing trip • Guaranteed fish • Teaches your kids the basics and precautions of fishing • Up to 5 kids (adults will be present with 3 of more kids to ensure safety and enjoyability of the trip) • Fishing poles will be provided if kids do not have poles of their own",
+  "2-5 hour fishing trip • Guaranteed fish • Teaches your kids the basics and precautions of fishing • Up to 5 kids (adults will be present with 3 or more kids to ensure safety and enjoyability of the trip) • Fishing poles will be provided if kids do not have poles of their own",
   "",
   "",
   "Home cooked meal by Kristi Spitler • Contact Gavin Spitler for more details 330-465-3403",
