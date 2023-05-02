@@ -46,7 +46,7 @@ let titles = [
   "20 • Wicker Furniture"
 ];
 let subtitles = [
-  "Current Bid: $25 - Alicia Hewitt", // Movie Night Basket
+  "Current Bid: $50 - Dan Squillante", // Movie Night Basket
   "Current Bid: $75 - Kendrick Mullet", // Coffee
   "Current Bid: $50 - Merle Miller", // Taco
   "Current Bid: $130 - Mark Sarver", // Meat Basket
