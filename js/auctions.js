@@ -56,7 +56,7 @@ let subtitles = [
   "Current Bid: $250 - Atlee & Elsie Hostetler", // Meat Box
   "Current Bid: $150 - Jason Mast", // Gift Card Menu
   "Current Bid: $35 - Gloria Stoltzfus", // Summer
-  "Current Bid: $75 - Rachel Burgett", // Coffee Table
+  "Current Bid: $125 - Keith Tennefoss", // Coffee Table
   "Current Bid: $150 - Jason Mast", // Yeti
   "Current Bid: $250 - Ivan & Fran Miller", // Yard Work
   "Current Bid: $50 - Laura Yoder", // Babysitting
