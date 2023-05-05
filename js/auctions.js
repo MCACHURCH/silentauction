@@ -50,12 +50,12 @@ let subtitles = [
   "Current Bid: $75 - Kendrick Mullet", // Coffee
   "Current Bid: $50 - Merle Miller", // Taco
   "Current Bid: $150 - Jason Mast", // Meat Basket
-  "Current Bid: $45 - Aeliana Nussbaum", // Pink Backpack
-  "Current Bid: $50 - Gloria Stoltzfus", // Green Backpack
+  "Current Bid: $60 - Gloria Stoltzfus", // Pink Backpack
+  "Current Bid: $75 - Gloria Stoltzfus", // Green Backpack
   "Current Bid: $60 Lori Miller", // Snack
   "Current Bid: $250 - Atlee & Elsie Hostetler", // Meat Box
   "Current Bid: $150 - Jason Mast", // Gift Card Menu
-  "Current Bid: $35 - Gloria Stoltzfus", // Summer
+  "Current Bid: $50 - Rhoda Wagler", // Summer
   "Current Bid: $125 - Keith Tennefoss", // Coffee Table
   "Current Bid: $150 - Jason Mast", // Yeti
   "Current Bid: $250 - Ivan & Fran Miller", // Yard Work
