@@ -50,7 +50,7 @@ let subtitles = [
   "Current Bid: $75 - Kendrick Mullet", // Coffee
   "Current Bid: $50 - Merle Miller", // Taco
   "Current Bid: $150 - Jason Mast", // Meat Basket
-  "Current Bid: $60 - Gloria Stoltzfus", // Pink Backpack
+  "Current Bid: $65 - Aeliana Nussbaum", // Pink Backpack
   "Current Bid: $75 - Gloria Stoltzfus", // Green Backpack
   "Current Bid: $60 Lori Miller", // Snack
   "Current Bid: $250 - Atlee & Elsie Hostetler", // Meat Box
