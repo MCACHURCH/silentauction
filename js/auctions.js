@@ -47,7 +47,7 @@ let titles = [
 ];
 let subtitles = [
   "Current Bid: $50 - Dan Squillante", // Movie Night Basket
-  "Current Bid: $75 - Kendrick Mullet", // Coffee
+  "Current Bid: $85 - John Detweiler", // Coffee
   "Current Bid: $50 - Merle Miller", // Taco
   "Current Bid: $150 - Jason Mast", // Meat Basket
   "Current Bid: $65 - Aeliana Nussbaum", // Pink Backpack
