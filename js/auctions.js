@@ -52,9 +52,9 @@ let subtitles = [
   "Current Bid: $150 - Jason Mast", // Meat Basket
   "Current Bid: $65 - Aeliana Nussbaum", // Pink Backpack
   "Current Bid: $75 - Gloria Stoltzfus", // Green Backpack
-  "Current Bid: $60 Lori Miller", // Snack
+  "Current Bid: $100 - Rocky Neuenschwander", // Snack
   "Current Bid: $250 - Atlee & Elsie Hostetler", // Meat Box
-  "Current Bid: $150 - Jason Mast", // Gift Card Menu
+  "Current Bid: $175 - Rocky Neuenschwander", // Gift Card Menu
   "Current Bid: $50 - Rhoda Wagler", // Summer
   "Current Bid: $125 - Keith Tennefoss", // Coffee Table
   "Current Bid: $150 - Jason Mast", // Yeti
