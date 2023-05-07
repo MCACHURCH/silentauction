@@ -47,15 +47,15 @@ let titles = [
 ];
 let subtitles = [
   "Current Bid: $50 - Dan Squillante", // Movie Night Basket
-  "Current Bid: $85 - John Detweiler", // Coffee
-  "Current Bid: $50 - Merle Miller", // Taco
+  "Current Bid: $125 - Duane Hochstetler", // Coffee
+  "Current Bid: $130 - Ranee Yoder", // Taco
   "Current Bid: $150 - Jason Mast", // Meat Basket
   "Current Bid: $65 - Aeliana Nussbaum", // Pink Backpack
   "Current Bid: $75 - Gloria Stoltzfus", // Green Backpack
-  "Current Bid: $100 - Rocky Neuenschwander", // Snack
+  "Current Bid: $150 - Jim Neuenschwander", // Snack
   "Current Bid: $250 - Atlee & Elsie Hostetler", // Meat Box
   "Current Bid: $300 - Owen Troyer", // Gift Card Menu
-  "Current Bid: $50 - Rhoda Wagler", // Summer
+  "Current Bid: $75 - Rose Miller", // Summer
   "Current Bid: $125 - Keith Tennefoss", // Coffee Table
   "Current Bid: $150 - Jason Mast", // Yeti
   "Current Bid: $250 - Ivan & Fran Miller", // Yard Work
@@ -64,8 +64,8 @@ let subtitles = [
   "Current Bid: $15 - Benson Stoltzfus", // Wyatt Painting
   "Current Bid: $15 - Brody Stoltzfus", // Nate Painting
   "Current Bid: $200 - Kendrick Mullet", // Meal
-  "Current Bid: $100 - Kendrick Mullet", // Grocery
-  "Current Bid: $150 - John & Jalaine Mast" // Wicker Furniture
+  "Current Bid: $200 - Jim Neuenschwander", // Grocery
+  "Current Bid: $225 - Ranee & Larry Yoder" // Wicker Furniture
 ];
 let details = [
   "• Gourmet Popcorn • Blanket 50 x 60 • Fireproof dvd • Five boxes of candy • Six bags of microwave popcorn • Four small popcorn buckets",
